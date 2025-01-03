@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .card{
+      text-align: center;
+      margin-top: 42px;
+      border: 5px solid black;
+      padding:20px;
+      max-width: 200px;
+
+    }
+    .body{
+    height:0;
+    overflow: hidden;
+    transition: height 0.1s ease-in-out ;
+    }
+    .body.l{
+      margin-top: 15px;
+      height: 200px;
+      
+    
+    }
+    
+  </style>
+</head>
+<body>
+ <button class="h">open</button>
+<div class="card">
+  <div class="title">content</div>
+  <div class="body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate maxime nemo numquam odit optio dolor molestias est repudiandae recusandae impedit!</div>
+</div>
+<div class="kl">0</div>
+  
+  
+  <script>
+ 
+    
+a=document.querySelector(".h");
+b=document.querySelector(".title");
+
+c=document.querySelector(".body");
+d=document.querySelector(".card");
+y=document.querySelector(".kl");
+
+let h=0;
+ var l=true;
+ a.onclick=()=>{
+
+  
+ if(l){
+  
+  a.style.backgroundColor="green";
+  c.classList.add("l");
+  
+
+  
+  l=false;
+
+}else {
+ 
+  a.style.backgroundColor="white";
+  c.classList.remove("l")
+
+  
+  
+  l=true;}
+  h+=1;
+y.innerText=h
+ }
+ 
+
+
+
+
+
+
+
+
+
+  </script>
+</body>
+</html>

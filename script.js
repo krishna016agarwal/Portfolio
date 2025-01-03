@@ -8,6 +8,7 @@ let d=document.querySelector(".pp")
 let f=document.querySelector(".group1")
 let g=document.querySelector(".fa-angle-up")
 let h=document.querySelector("#msg")
+let k=document.querySelector(".auto-type")
 let form=document.forms["submitform"]
 
 function opentab(tab){
@@ -75,3 +76,12 @@ form.addEventListener("submit",e=>{
     },4000) 
     form.reset()
 })
+
+
+
+var typed=new Typed(k,{
+strings:["Programmer","Web Developer","Full Stack Developer"],
+typeSpeed:150,
+backSpeed:150,
+looped:true
+  } )

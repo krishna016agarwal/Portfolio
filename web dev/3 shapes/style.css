@@ -1,0 +1,32 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+html,body{
+    height:100%;
+    width:100%;
+    background: pink;
+    
+
+
+}
+div{
+    border-style:solid;
+    border-radius:10px;
+    width:200px;
+    height:200px;
+
+}
+#box1{
+    background: blue;
+}
+#box2{
+    background: red;
+}
+#box3{
+    background: grey;
+}
+main{
+    display:flex;
+
+}

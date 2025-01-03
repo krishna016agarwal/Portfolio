@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="icon" href ="logo.png">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
+      integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ------------------------------------------------------------------------------- -->
+    <div id="header">
+      <div class="container2">
+        <nav>
+          <img src="logo.png" class="logo" />
+          <ul class="navbar">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li ><a class="pp" href="#projects" >Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+
+          <i
+            class="fa-solid fa-bars"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight"
+          >
+          </i>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasRight"
+            aria-labelledby="offcanvasRightLabel"
+          >
+            <div class="offcanvas-header">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="sidebar">
+                <li  data-bs-dismiss="offcanvas"  aria-label="Close">
+                  <a href="#header">Home</a>
+                </li>
+                <li data-bs-dismiss="offcanvas" aria-label="Close">
+                  <a href="#about">About</a>
+                </li>
+                <li data-bs-dismiss="offcanvas" aria-label="Close">
+                  <a class="ppp" href="#projects">Projects</a>
+                </li>
+                <li data-bs-dismiss="offcanvas" aria-label="Close">
+                  <a href="#contact">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- --------------------------------------- -->
+          <i class="fas fa-bars"></i>
+        </nav>
+        <div class="home">
+          <div class="header-text">
+            <p>Full Stack Developer</p>
+
+            <h1>
+              Hi,I'm <span>Krishna</span><br />
+              Agarwal 
+            </h1>
+          </div>
+         
+            
+            <a href="https://github.com/krishna016agarwal">
+              <div class="github">
+
+            </div>
+            </a>
+         
+          <!-- <div class="design">
+            <div class="red logdesign"></div>
+            <div class="white logdesign"></div>
+          </div> -->
+        </div>
+      </div>
+<a href="#">
+  <div class="hide group1">
+    <i class="fa-solid fa-angle-up hide"></i>
+  </div>
+</a>
+     
+     
+    </div>
+
+    <!-- ---------------------------------------------------------------------------------- -->
+
+    <div id="about">
+      <div class="container2">
+        <div class="row">
+          <div class="col1">
+            <img src="coding.png" />
+          </div>
+          <div class="col2">
+            <h1 class="subtitle">About Me</h1>
+            <div class="tab-titles">
+              <p class="tab-links active" onclick="opentab('skills')">Skills</p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active" id="skills">
+              <div class="skills1">
+                <ul>
+                  <li><span>React</span></li>
+                  <li><span>JavaScript</span></li>
+                  <li><span>CSS</span></li>
+                  <li><span>Python</span></li>
+                  <li><span>MySQL</span></li>
+                  <li><span>HTML</span></li>
+                </ul>
+              </div>
+              <div class="skills2">
+                <ul>
+                  <li><span>MongoDB</span></li>
+                  <li><span>EJS</span></li>
+                  <li><span>Express</span></li>
+                  <li><span>Node.js</span></li>
+                </ul>
+              </div>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2024-2028</span><br />Maharaja Agrasen Institute of
+                  Technology
+                </li>
+                <li><span>2024</span><br />Lovely Public Sr Sec School</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------------------------------------------------------------------------------- -->
+
+    <div id="projects">
+      <div class="container2">
+        <h1 class="subtitle">Projects</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="image6.png" />
+            <div class="layer">
+              <h3>Pokeamon Cards</h3>
+
+              <a href="https://resonant-lokum-5a09d6.netlify.app">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="image5.png" />
+
+            <div class="layer">
+              <h3>Amazon</h3>
+
+              <a href="https://amazon016.netlify.app">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="image4.png" />
+
+            <div class="layer">
+              <h3>Rock Paper Sciccors</h3>
+
+              <a href="https://statuesque-torrone-884aee.netlify.app">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="hidedata hide">
+          <div class="work">
+            <img src="image3.png" />
+
+            <div class="layer">
+              <h3>Tic-Tac-Toe</h3>
+
+              <a href="https://krishnaagarwal-tic-tac-toe.netlify.app">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="image2.png" />
+
+            <div class="layer">
+              <h3>Netflix</h3>
+
+              <a href="https://creative-bunny-17ae0e.netlify.app">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="image1.png" />
+
+            <div class="layer">
+              <h3>Myntra</h3>
+
+              <a href="https://hilarious-biscochitos-9ea401.netlify.app">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="image7.png" />
+
+            <div class="layer">
+              <h3>Weather</h3>
+
+              <a href="https://illustrious-empanada-cb5ae1.netlify.app">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="image8.png" />
+
+            <div class="layer">
+              <h3>Todo-List</h3>
+
+              <a href="https://krishnatodoapp.netlify.app">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <button class="button">See More</button>
+      </div>
+    </div>
+
+    <!-- ---------------------------------------------------------------------------------- -->
+
+    <div id="contact">
+      <div class="container2">
+        <div class="row">
+          <div class="contactleft">
+            <h1 class="subtitle">Contact</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i>
+              krishna016agrawal@gmail.com
+            </p>
+            <p><i class="fa-solid fa-phone"></i>+91 9897481144</p>
+            <div class="icons">
+              <a href="https://www.instagram.com/krishnaagarwal016/">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="https://github.com/krishna016agarwal">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/krishna-agarwal-4a5a76327/">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+            </div>
+            <a
+              href="https://drive.google.com/file/d/1F1_w5PA6GlNFWlxz8SDlzBNiGxvH7XiB/view?usp=drivesdk "
+              download
+              class="button1"
+              >Download Resume</a
+            >
+          </div>
+          <div class="contactright">
+            <form name="submitform">
+              <input
+              class="name"
+                type="text"
+                name="name "
+                placeholder="Your Name"
+                required
+              />
+              <input
+              class="email"
+                type="email"
+                name="email "
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="message"
+                rows="6"
+                placeholder="Your Message"
+              
+              ></textarea>
+              <button class=" button1 btn3" type="submit">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------------------------------------------------------------------------------- -->
+
+    <div class="container">
+      <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3"></ul>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

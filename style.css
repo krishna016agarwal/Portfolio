@@ -1,0 +1,710 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins ", sans-serif;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #080808;
+  color: white;
+}
+#header {
+  width: 100%;
+  height: 730px;
+}
+.home {
+  display: flex;
+  width: 100%;
+  
+  justify-content: space-around;
+}
+.container2 {
+  padding: 10px 18px;
+
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  
+}
+.logo {
+  width: 140px;
+}
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+}
+nav ul li a::after {
+  content: "";
+  width: 0%;
+  height: 3px;
+  background: #ff004f;
+  position: absolute;
+
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+nav ul li a:hover::after {
+  width: 100%;
+  box-shadow: 0px 2px 5px 0px #ff004f;
+}
+.header-text p{
+  margin-top: 180px;
+  font-size: 30px;
+  
+}
+
+.github{
+  width:370px;
+  height:215px;
+  background-color: black;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  place-content: center;
+  place-items: center;
+  overflow: hidden;
+  border-radius: 20px;
+  margin-top: 180px;
+  margin-left: 10%;
+  margin-right: 5px;
+
+
+
+}
+.github::before{
+  content: "";
+  position: absolute;
+  width: 160px;
+  background-image: linear-gradient(180deg,#ff004f,white);
+  height: 194%;
+  animation: rotating 5s linear infinite;
+  transition: all 0.6s linear;
+}
+@keyframes rotating{
+  from{
+    transform: rotate(0deg);
+    
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+.github::after{
+  content: "";
+  position: absolute;
+  background-image: url("images.jpeg");
+  background-repeat: no-repeat;
+  background-size:cover;
+  inset: 5px;
+  border-radius: 15px;
+}
+.logo2:hover {
+  transform: scale(1.04);
+}
+.header-text h1 {
+  font-size: 60px;
+  margin-top: 20px;
+}
+.header-text h1 span {
+  color: #ff004f;
+}
+.group{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #b54769;
+  position: fixed;
+  z-index: 1;
+  bottom:30px;
+  cursor: pointer;
+  right:30px;
+transition: transform 0.1s ;
+
+
+}
+.group:hover{
+  transform: scale(1.09);
+}
+.fa-angle-up{
+  color: white;
+
+  position: relative;
+  left: 17px;
+  top:13px
+}
+/* --------------------------logo-------------------------------------- */
+.logdesign{
+  height: 20px;
+  
+  border-radius: 10px;
+  
+}
+.red{
+  background-color: #ff004f;
+  transform: rotate(30deg);
+  animation:design2 4s infinite;
+  position: relative;
+  
+  
+}
+.white{
+  background-color: white;
+  transform: rotate(-30deg);
+  animation:design 4s infinite;
+  width: 500px;
+}
+
+@keyframes design{
+  0%{transform: rotate(-30deg)}
+  50%{transform: rotate(30deg);}
+  100%{transform: rotate(-30deg)}
+}
+
+@keyframes design2{
+  0%{transform: rotate(30deg)}
+  50%{transform: rotate(-30deg);}
+  100%{transform: rotate(30deg)}
+}
+
+/* ------------------about------------------ */
+#about {
+  color: #ababab;
+  height: 730px;
+  margin-top: 20px;
+ 
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.col1 {
+  flex-basis: 35%;
+}
+.col1 img {
+  width: 100%;
+  border-radius: 15px;
+}
+.col2 {
+  flex-basis: 60%;
+}
+.subtitle {
+  font-size: 60px;
+  font-weight: 600;
+  color: white;
+}
+.tab-titles {
+  display: flex;
+  margin: 20px 0 40px;
+}
+.tab-links {
+  margin-right: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+.tab-links::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: 0.5s;
+}
+.tab-links.active::after {
+  width: 50%;
+}
+.tab-contents ul li {
+  list-style: none;
+  margin: 10px 0;
+}
+.tab-contents ul li span {
+  color: #b54769;
+  font-size: 14px;
+}
+.tab-contents {
+  display: none;
+}
+.tab-contents.active {
+  display: flex;
+}
+
+/* --------------------projects----------------- */
+#projects {
+  padding: 0px 0;
+  height: 708px;
+}
+#projects2{
+  padding: 50px 0;
+  height: 700px;
+  margin-bottom: 460px;
+}
+.work-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+.work {
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+
+  background-size: contain;
+}
+.work img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.5s;
+}
+.layer {
+  width: 100%;
+  height: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  transition: height 0.5s;
+}
+.layer h3 {
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.layer a {
+  margin-top: 20px;
+  color: #ff004f;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 60px;
+  background-color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.work:hover img {
+  transform: scale(1.1);
+}
+.work:hover .layer {
+  height: 100%;
+}
+.button {
+  padding: 15px 30px;
+  background-color: #ff004f;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  transition: all 0.3s;
+  margin-top: 0px;
+}
+button:hover {
+  transform: scale(1.1);
+}
+.button1 {
+  padding: 15px 30px;
+  background-color: #ff004f;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  transition: all 0.3s;
+  margin-top: 0px;
+}
+.button1:hover {
+  transform: scale(1.1);
+}
+.hidedata {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+
+}
+.hide {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+.close{
+  padding: 15px 30px;
+  background-color: #ff004f;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  transition: all 0.3s;
+  margin-top: 40px;
+}
+
+
+/* -------------------------contact------------------------- */
+.contactleft {
+  flex-basis: 35%;
+}
+#contact {
+  height: 555px;
+}
+.contactright {
+  flex-basis: 60%;
+}
+.contactleft p {
+  margin-top: 30px;
+}
+.contactleft p i {
+  color: #ff004f;
+  margin-right: 15px;
+  font-size: 25px;
+}
+.icons {
+  margin-top: 30px;
+}
+.icons a {
+  text-decoration: none;
+  font-size: 30px;
+  margin-right: 15px;
+  color: #ababab;
+  display: inline;
+  transition: transform 0.5s;
+}
+.icons a:hover {
+  color: #ff004f;
+  transform: translateY(-5px);
+}
+
+.contactright form {
+  width: 100%;
+}
+form input,
+form textarea {
+  width: 100%;
+  border: 0;
+  outline: none;
+  background: #262626;
+  margin: 15px 0;
+  padding: 15px;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 6px;
+}
+ .button1 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  margin-top: 20px;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+}
+#msg{
+  color:#61b752;
+  margin-top: 10px;
+  display: block;
+}
+/* -------------------------------responsive------------------------- */
+nav .fas {
+  display: none;
+}
+
+.fa-bars {
+  visibility: hidden;
+}
+
+@media screen and (max-width: 1000px) {
+  .fa-bars {
+    visibility: visible;
+    cursor: pointer;
+  }
+  .header-text{
+    font-size: 15px;
+  }
+  .header-text h1{
+    font-size: 50px;
+  }
+  .navbar {
+    visibility: hidden;
+  }
+}
+
+@media screen and (max-width: 913px) {
+  .header-text{
+    font-size: 15px;
+  }
+  .header-text h1{
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 826px) {
+  .header-text p{
+    font-size: 25px;
+  }
+  .header-text h1{
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 756px) {
+  .home{
+    display: block;
+    margin-bottom: 20px;
+  }
+  .header-text p{
+    font-size: 30px;
+  }
+  .header-text h1{
+    font-size: 50px;
+  }
+  .github{
+    margin-top: 80px;
+    margin-left: 20%;
+  
+  }
+  #about{
+    margin-top: 190px;
+  }
+  .logo2{
+    margin-top: 60px;
+  }
+}
+@media screen and (max-width: 590px) {
+.navbar{
+  width: 0px;
+}
+.col1 img{
+  margin-top: 110px;
+}
+
+}
+
+
+
+
+
+@media screen and (max-width: 441px) {
+  .logo2{
+    margin-left: 2%;
+    margin-right: 0;
+  }
+  }
+  @media screen and (max-width: 410px) {
+    .logo2{
+      height: 180px;
+      margin-left: 2%;
+      margin-right: 0;
+    }
+    }
+    @media screen and (max-width: 382px) {
+      .logo2{
+        height: 165px;
+        margin-left: 3%;
+        margin-right: 0;
+      }
+      
+      }
+      @media screen and (max-width: 354px) {
+        .logo2{
+          height: 165px;
+          margin-left: 0%;
+          margin-right: 0;
+        }
+        }
+        @media screen and (max-width: 370px) {
+.col1 img{
+  margin-top: 130px;
+}
+        }
+        @media screen and (max-width: 330px) {
+          .col1 img{
+            margin-top: 200px;
+          }}
+.sidebar {
+  color: white;
+}
+
+.btn-close {
+  color: white;
+}
+
+.offcanvas {
+  background-color: #222121;
+}
+.btn-close {
+  background-color: white;
+}
+
+@media screen and (max-width: 650px) {
+  .subtitle {
+    font-size: 40px;
+  }
+  .col1,
+  .col2 {
+    flex-basis: 100%;
+  }
+  .col1 {
+    margin-bottom: 30px;
+  }
+  .col2 {
+    font-size: 14px;
+  }
+  .tab-links {
+    font-size: 16px;
+    margin-right: 20px;
+  }
+  .contactleft,
+  .contactright {
+    flex-basis: 100%;
+  }
+  #contact{
+    height: 820px;
+  }
+}
+@media screen and (max-width: 1003px) {
+#contact{
+  margin-top: 30px;
+}
+}
+@media screen and (max-width: 673px) {
+#projects{
+  margin-bottom: 580px;
+}
+#projects2{
+  margin-bottom: 2220px;
+}
+
+}
+@media screen and (max-width: 1004px) {
+  #projects2{
+    margin-bottom: 1020px;
+  }
+
+}
+@media screen and (max-width: 815px) {
+  #projects2{
+    margin-bottom: 800px;
+  }
+
+}
+@media screen and (max-width: 672px) {
+  #projects2{
+    margin-bottom: 2500px;
+  }
+
+}
+@media screen and (max-width: 600px) {
+  #projects{
+    margin-bottom: 490px;
+  }
+  .github{
+    margin-top: 80px;
+    margin-left: 10%;
+  
+  }
+}
+@media screen and (max-width: 645px) {
+  #projects2{
+    margin-bottom: 2370px;
+  }
+
+}
+@media screen and (max-width: 607px) {
+  #projects2{
+    margin-bottom: 2170px;
+  }
+
+}
+@media screen and (max-width: 560px) {
+  #projects2{
+    margin-bottom: 2000px;
+  }
+
+}
+@media screen and (max-width: 520px) {
+  #projects2{
+    margin-bottom: 1800px;
+  }
+
+}
+@media screen and (max-width: 470px) {
+  #projects2{
+    margin-bottom: 1700px;
+  }
+
+}
+@media screen and (max-width: 440px) {
+  #projects2{
+    margin-bottom: 1500px;
+  }
+
+}
+@media screen and (max-width: 400px) {
+  #projects2{
+    margin-bottom: 1300px;
+  }
+
+}
+@media screen and (max-width: 540px) {
+  #projects{
+    margin-bottom: 380px;
+  }
+
+}
+@media screen and (max-width: 460px) {
+  #projects{
+    margin-bottom: 260px;
+  }
+
+}
+@media screen and (max-width: 400px) {
+  #projects{
+    margin-bottom: 120px;
+  }
+
+}
+@media screen and (max-width: 650px) {
+
+  #projects{
+    margin-top: 190px;
+  }
+}
+
+@media screen and (max-width: 485px) {
+
+  
+  .github{
+    margin-top: 80px;
+    margin-left: 2px;
+  
+  }
+}
+
+@media screen and (max-width: 420px) {
+
+  
+  .github{
+    margin-top: 80px;
+    margin-left: -5px;
+  
+  }
+}

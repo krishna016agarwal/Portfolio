@@ -9,6 +9,8 @@ let f=document.querySelector(".group1")
 let g=document.querySelector(".fa-angle-up")
 let h=document.querySelector("#msg")
 let k=document.querySelector(".auto-type")
+let v=document.querySelector("#coding")
+let u=document.querySelector(".Mah")
 let form=document.forms["submitform"]
 
 function opentab(tab){
@@ -20,6 +22,14 @@ function opentab(tab){
     }
     event.currentTarget.classList.add("active");
     document.getElementById(tab).classList.add("active")
+    if(v.src.match("coding.png")){
+        v.src="2021-07-19-11.jpg";
+        u.innerText="Maharaja Agrasen Institute of Technology"
+        
+    }else{
+        v.src="coding.png"
+    }
+    
   
 }
 condition=true;
@@ -48,6 +58,7 @@ b.innerText="See More"
   
   
 })
+console.log(v);
 
 let calscroll=()=>{
     let pos=Math.floor(document.documentElement.scrollTop);
@@ -85,3 +96,5 @@ typeSpeed:150,
 backSpeed:150,
 looped:true
   } )
+
+

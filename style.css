@@ -262,7 +262,47 @@ transition: transform 0.1s ;
 .tab-contents.active {
   display: flex;
 }
+.image{
+  background-color: wheat;
+  padding: 4px 4px 18px 4px;
+  width: 318px;
+  height:198px;
+  cursor: pointer;
+}
+.pt1{
+  transform: rotate(10deg) translateX(30px) translateY(-80px);
+  z-index: 1;
+ 
+}
+.pt2{
+  z-index: 2;
+  transform: rotate(-10deg) translateX(-60px) translateY(-80px);
+}
+.pt3{
+  z-index: 3;
+  transform: rotate(6deg) translateX(90px) translateY(-120px);
+}
+/* .image:hover{
+transform: rotate(0deg);
+  z-index: 10;
+  
 
+}
+.pt1:hover{
+  height: 90%;
+  width: 100%;
+  transform:translateX(-150px) translateY(-280px)
+}
+.pt2:hover{
+  height: 50%;
+  width: 100%;
+  transform:translateX(-200px) translateY(-380px)
+}
+.pt3:hover{
+  height: 80%;
+  width: 100%;
+  transform:translateX(-200px) translateY(-380px)
+} */
 /* --------------------projects----------------- */
 #projects {
   padding: 0px 0;
@@ -556,11 +596,22 @@ nav .fas {
             margin-top: 200px;
           }}
 .sidebar {
+  display: flex;
+  flex-direction: column;
   color: white;
 }
-
+.sidebarli{
+  margin-top: 30px;
+}
 .btn-close {
   color: white;
+}
+.fa-xmark{
+  color: #ffffff;
+  font-size:xx-large;
+  position: relative;
+  left: 308px;
+  cursor: pointer;
 }
 
 .offcanvas {

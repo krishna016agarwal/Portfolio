@@ -7,7 +7,7 @@ app.get("/", (req, res) => {
   res.send("Hello World!");
 });  
 const corsOptions={
-  origin:"https://spectacular-sunflower-82bd61.netlify.app/",
+  origin:"http://127.0.0.1:5500",
   methods:"GET, POST ,PUT , DELETE",
   credentials:true,
 }

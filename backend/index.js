@@ -21,9 +21,8 @@ app.use(express.json())
 
 const mongoose = require("mongoose");
 
-mongoose
-  .connect(
-    "mongodb+srv://krishna016agrawal:krishna016@cluster0.qjftj.mongodb.net/portfolio"
+mongoose   
+  .connect( process.env.MONGODB
   )
   .then((e) => console.log("MongoDB Connected"));
 

@@ -1,6 +1,7 @@
+require("dotenv").config()
 const express = require("express");
 const app = express();
-const port = 3000;
+const port = process.env.PORT|| 3000;
 const Portfolio = require("./models/portfolio.models");
 const cors =require("cors")
 app.get("/", (req, res) => {
@@ -21,9 +22,8 @@ app.use(express.json())
 
 const mongoose = require("mongoose");
 
-mongoose   
-  .connect( process.env.MONGODB
-  )
+mongoose
+  .connect( process.env.MONGODB)
   .then((e) => console.log("MongoDB Connected"));
 
 
@@ -31,7 +31,7 @@ mongoose
   app.post("/contact", async (req, res) => {
    
     try {
-      console.log(req);
+      
     
       const { name, email, message } = req.body;
       await Portfolio.create({
